@@ -1,16 +1,22 @@
 //setup state here(rreduce hook)
 //rredner todolist here
 import React, { useState, useReducer } from 'react';
-import { TodoReducer, initialState } from '../reducers/TodoReducer';
+const Todo = (props) =>{
+    const toggleItem = (id) =>{
+        props.dispatch({type: "COMPLETE", id:id})
+    }
 
-const Todo = () =>{
-    const [state, dispatch] = useReducer(TodoReducer, initialState);
-
-    console.log(state);
     return (
         <div>
-       <h2> To-Do: {state.item}</h2>
-        
+       <h2> To-Do: </h2>
+        {props.state.map(todo=>{
+            return(
+                <div className={`todo${todo.completed ? " completed" : ""}`} onClick={() => toggleItem(todo.id)} key={todo.id}>
+                    
+                <p>{todo.item}</p>
+            </div>
+            )
+            })}
         </div>
     )
 
