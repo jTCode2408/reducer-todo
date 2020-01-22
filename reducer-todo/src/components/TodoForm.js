@@ -29,7 +29,7 @@ return(
     <div className = "add-cont">
 
 <form >
-<input className= "add-todo"
+<input className= "task"
 type = "text"
 name = "todo"
 value ={todo}

@@ -8,12 +8,13 @@ const Todo = (props) =>{
 
     return (
         <div>
-       <h2> To-Do: </h2>
+       <h1> To-Do: </h1>
         {props.state.map(todo=>{
             return(
                 <div className={`todo${todo.completed ? " completed" : ""}`} onClick={() => toggleItem(todo.id)} key={todo.id}>
-                    
-                <p>{todo.item}</p>
+<ul>
+                <li>{todo.item}</li>
+                </ul>
             </div>
             )
             })}
