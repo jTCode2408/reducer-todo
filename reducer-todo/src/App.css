@@ -1,0 +1,55 @@
+
+body {
+  margin: 5%;
+  background-image: url('images/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: blueviolet;
+  text-decoration-style: wavy;
+
+}
+
+button{
+border-radius:5px;
+background-color: rgb(128, 0, 85);
+color:rgb(75, 5, 46);
+text-decoration:none;
+border-style: none;
+margin:3%;
+height:20px;
+text-align: center;
+
+}
+
+button:hover{
+color:rgb(128, 0, 85);
+background-color: rgb(75, 5, 46);
+
+}
+
+input{
+color: blueviolet;
+background-color: transparent;
+border-radius: 5px;
+border-style: dashed;
+}
+
+li{
+color:rgb(63, 3, 97);
+font-weight: 600;
+
+
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  color: blueviolet;
+  text-decoration: underline;
+}
