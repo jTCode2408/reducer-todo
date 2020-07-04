@@ -1,6 +1,6 @@
 export const initialState =[ 
     {
-        item: 'List tasks!',
+        item: '',
         completed: false,
         id: Date.now(),
         todos: []

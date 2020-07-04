@@ -1,5 +1,3 @@
-//setup state here(rreduce hook)
-//rredner todolist here
 import React, { useState, useReducer } from 'react';
 const Todo = (props) =>{
     const toggleItem = (id) =>{
@@ -13,15 +11,13 @@ const Todo = (props) =>{
             return(
                 <div className={`todo${todo.completed ? " completed" : ""}`} onClick={() => toggleItem(todo.id)} key={todo.id}>
 <ul>
-            <li>{todo.item} - (Added: {todo.id})</li>
+            <li>{todo.item} ({Date.now()})</li>
                 </ul>
             </div>
             )
             })}
         </div>
     )
-
-
 }
 
 export default Todo;

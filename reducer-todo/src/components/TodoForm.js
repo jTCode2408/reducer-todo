@@ -1,7 +1,3 @@
-//form input for adding to-do's
-//dispatch function to add todo
-//import reducer here as well for switch cases
-
 import React, { useState, useReducer} from 'react';
 import {TodoReducer,  initialState } from '../reducers/TodoReducer';
 import Todo from './Todo';
@@ -17,7 +13,7 @@ const TodoForm = () =>{
 
     const handleSubmit = e =>{
         e.preventDefault();
-        dispatch({type: "ADD_TODO", payload: todo, })
+        dispatch({type: "ADD_TODO", payload: todo})
     }
 
     const handleClear = e =>{
@@ -38,16 +34,12 @@ onChange = {handleChanges}
 
 <button onClick ={handleSubmit}> Add Task </button>
 <button onClick ={handleClear}> Clear Complete </button>
-
 </form>
 
 <Todo id ={state.id} todo ={todo} state ={state} dispatch = {dispatch}
 />
     </div>
 
-)
-
-}
-
+)}
 
 export default TodoForm;
