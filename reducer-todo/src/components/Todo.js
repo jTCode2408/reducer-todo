@@ -13,15 +13,13 @@ const Todo = (props) =>{
             return(
                 <div className={`todo${todo.completed ? " completed" : ""}`} onClick={() => toggleItem(todo.id)} key={todo.id}>
 <ul>
-                <li>{todo.item}</li>
+            <li>{todo.item} - (Added: {todo.id})</li>
                 </ul>
             </div>
             )
             })}
         </div>
     )
-
-
 
 
 }

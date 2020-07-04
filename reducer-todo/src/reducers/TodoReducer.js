@@ -1,6 +1,6 @@
 export const initialState =[ 
     {
-        item: 'Learn about reducers',
+        item: 'List tasks!',
         completed: false,
         id: Date.now(),
         todos: []

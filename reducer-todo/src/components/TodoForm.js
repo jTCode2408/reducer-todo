@@ -17,7 +17,7 @@ const TodoForm = () =>{
 
     const handleSubmit = e =>{
         e.preventDefault();
-        dispatch({type: "ADD_TODO", payload: todo})
+        dispatch({type: "ADD_TODO", payload: todo, })
     }
 
     const handleClear = e =>{
@@ -36,7 +36,7 @@ value ={todo}
 onChange = {handleChanges}
 />
 
-<button onClick ={handleSubmit}> Add To-Do </button>
+<button onClick ={handleSubmit}> Add Task </button>
 <button onClick ={handleClear}> Clear Complete </button>
 
 </form>
