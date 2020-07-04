@@ -11,7 +11,7 @@ const Todo = (props) =>{
             return(
                 <div className={`todo${todo.completed ? " completed" : ""}`} onClick={() => toggleItem(todo.id)} key={todo.id}>
 <ul>
-            <li>{todo.item} ({Date.now()})</li>
+            <li>{todo.item}</li>
                 </ul>
             </div>
             )
